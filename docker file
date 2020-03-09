@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  
+  tasks:
+  - name: create docker image using war file
+    command: docker build -t narendra .
+    args:
+      chdir: 
